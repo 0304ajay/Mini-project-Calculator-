@@ -30,7 +30,10 @@ void stdcal<t,r>::multiplication(t a, r b)
 template<typename t, typename r>
 void stdcal<t, r>::division(t a, r b)
 {
+	if(b!=0)
 	cout<< b/a<<endl;
+	else
+		cout<<"Enter the correct B value" <<endl;
 }
 template<typename t, typename r>
 void stdcal<t, r>::Modulus(t a, r b)
